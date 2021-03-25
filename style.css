@@ -1,0 +1,13 @@
+/*
+Theme Name: Abbelicious
+Text Domain: Abbelicious
+Version: 1.0
+Desciption: Custom theme for WP-lab #2
+Tags: custom, testing, cool
+Author: Albin Lagerquist
+Author URI: https://albinlagerquist.com
+*/
+
+h1 {
+    color: red;
+}
