@@ -1,6 +1,6 @@
 /*
-Theme Name: Abbelicious
-Text Domain: Abbelicious
+Theme Name: abbe
+Text Domain: abbe
 Version: 1.0
 Desciption: Custom theme for WP-lab #2
 Tags: custom, testing, cool
@@ -8,6 +8,43 @@ Author: Albin Lagerquist
 Author URI: https://albinlagerquist.com
 */
 
-h1 {
-    color: red;
+
+
+/* CUSTOM CSS - overided wordpress and bootstrap styles */
+
+/*--------------------------------
+      Nav
+--------------------------------*/
+
+.abbe-navbar {
+    filter: drop-shadow(1px 1px 5px #333);  
+}
+
+.abbe-site-title {
+    font-size: 2em;
+    line-height: 0.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    background-color: #0d6efd;
+    color: whitesmoke;
+}
+
+.current-menu-item a {
+    background-color: #0d6efd;
+    filter: drop-shadow(1px 1px 3px #333); 
+     color: whitesmoke;
 }
