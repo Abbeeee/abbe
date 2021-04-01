@@ -5,7 +5,6 @@
     <h1>index.php</h1>
     <p>Fallback page. Nothing here yooo.</p>
 
-
 </main>
 
 <?php get_footer(); ?>

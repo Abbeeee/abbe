@@ -29,24 +29,30 @@ function abbe_menus() {
 add_action('init', 'abbe_menus');
 
 
-// Create custom taxanomy
+// Create custom post type as well as two taxonomies
 function project_post_type(){
     // hierachical default = false
     $args = array(
         'label' => 'Projects',
         'public' => true,
-        'menu_icon' => 'dashicons-images-alt',
-        'supports' => array('title', 'editor', 'author', 'thumbnail', 'comments'),
-        'taxonomies' => array('post_tag')       
+        'menu_icon' => 'dashicons-portfolio',
+        'supports' => array('title', 'editor', 'author', 'thumbnail', 'comments')      
     );
     register_post_type('project', $args);
 
-    $taxargs = array(
-        'public' => true,
-        'label' => 'type',
-        'hierarchical' => false  
+    
+    $typeargs = array(
+        'label' => 'Project Type',
+        'hierarchical' => true  
     );
-    register_taxonomy('type', 'project', $taxargs);
+    register_taxonomy('type', 'project', $typeargs);
+
+
+    $skillsargs = array(
+        'label' => 'Project Skills',
+    );
+    register_taxonomy('skills', 'project', $skillsargs);
+
 }
 
 add_action('init', 'project_post_type');

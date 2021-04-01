@@ -21,6 +21,10 @@ body {
     text-decoration: none;
 }
 
+.abbe-margin {
+    margin-left: -100px;
+}
+
 .wrapper {
   min-height: 100%;
   /* Equal to height of footer */
@@ -48,7 +52,7 @@ body {
     height: 100%;
 }
 
-button {
+button, .abbe-button {
     font-size: 1.2em;
     font-weight: 600;
     text-decoration: none;
@@ -59,7 +63,7 @@ button {
     color: whitesmoke;
 }
 
-button:hover {
+button:hover, .abbe-button:hover {
     background: linear-gradient(135deg, rgba(13,110,253,1) 25%, rgba(0,212,255,1) 100%);
 }
 
@@ -171,7 +175,8 @@ button:hover {
 --------------------------------*/
 
 .abbe-form input, textarea {
-    background-color: #D5DCEC;
+    background-color: #e8edf8;
     border: none;
-    border-bottom: 3px solid rgba(35, 52, 92, 0.4);
+    border-radius: 5px;
+    border-bottom: 3px solid#c3cce0;
 }

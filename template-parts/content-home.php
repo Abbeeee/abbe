@@ -6,5 +6,9 @@
       <div class="meta mb-1"><span class="date"><?php the_time('Y'); ?></span></div>
     </div>
   </a>
-  <div class="d-flex justify-content-center mb-3"><?php the_tags('<span class="tag"><i class="fa fa-tag me-1"></i>', '</span><span class="tag"><i class="fa fa-tag me-1"></i>', '</span>'); ?></div>
+  <div class="d-flex justify-content-center mb-3">
+    <?php 
+      $terms = get_the_terms('project', 'type');
+    ?>
+  </div>
 </div>            

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="container-fluid">
+<main class="container p-5">
 
     <?php
         the_content();
