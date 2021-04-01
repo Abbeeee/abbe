@@ -11,40 +11,38 @@
 
 <body>
 
-  <header>
-    <nav class="navbar abbe-navbar px-5 py-5" style="background-color: lightgrey;">
+  <div class="wrapper">
 
-      <?php
-      if(function_exists('the_custom_logo')) {
-          the_custom_logo();
-      }
-      ?>
+  <header class="abbe-navbar">
+    <div class="container">
+      <nav class="navbar py-5">
 
-      <!-- Print the site title dynamically and make it link to Home (front-page.php) -->
-      <a class="abbe-site-title" href="<?php echo home_url(); ?>">
-      <?php echo get_bloginfo('name'); ?>
-      </a>
-            
-      <?php
-        // Print menu from wp
-        wp_nav_menu(
-            array(
-              'menu' => 'primary',
-              'container' => '',
-              'theme_location' => 'primary',
-              'items_wrap' => '<ul id="" class="nav nav-pills">%3$s</ul>'
-            )
-        );
-      ?>
+        <?php
+        if (function_exists('the_custom_logo')) {
+            the_custom_logo();
+        }
+        ?>
 
-    </nav>
+        <!-- Print the site title dynamically and make it link to Home (front-page.php) -->
+        <a class="abbe-site-title" href="<?php echo home_url(); ?>">
+        <?php echo get_bloginfo('name'); ?>
+        </a>
+              
+        <?php
+          // Print menu from wp
+          wp_nav_menu(
+              array(
+                'menu' => 'primary',
+                'container' => '',
+                'theme_location' => 'primary',
+                'items_wrap' => '<ul class="nav nav-pills">%3$s</ul>'
+              )
+          );
+        ?>
+
+      </nav>
+    </div>
   </header>
 
   <div class="main-wrapper">
-
-   <header class="page-title px-5 py-5" style="background-color: rgb(255, 228, 228);">
-       <h2 class="heading"><?php the_title(); ?></h2>
-   </header>
-
-
-  
+   

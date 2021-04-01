@@ -13,11 +13,111 @@ Author URI: https://albinlagerquist.com
 /* CUSTOM CSS - overided wordpress and bootstrap styles */
 
 /*--------------------------------
+      General
+--------------------------------*/
+
+body {
+    color: #3d4557;
+    text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -100px;
+}
+.push {
+  height: 100px;
+}
+
+.abbe-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.abbe-img-single {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.abbe-img-default img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(13,110,253,1) 50%, rgba(0,212,255,1) 100%);
+    color: whitesmoke;
+}
+
+button:hover {
+    background: linear-gradient(135deg, rgba(13,110,253,1) 25%, rgba(0,212,255,1) 100%);
+}
+
+
+
+/*--------------------------------
+      Comments & tags
+--------------------------------*/
+
+.comment {
+    margin: 25px 0 25px 0;
+    padding: 25px;
+    background-color: #f0f0f0;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+}
+
+.abbe-comments label {
+    display: block;
+}
+
+.abbe-comments input[type=submit] {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(13,110,253,1) 50%, rgba(0,212,255,1) 100%);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+.abbe-comments input[type=submit]:hover {
+    background: linear-gradient(135deg, rgba(13,110,253,1) 25%, rgba(0,212,255,1) 100%);
+}
+
+.tag {
+    background-color: #d5dcec83;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: #3d4557;
+}
+
+.tag a {
+    text-decoration: none;
+    color: #3d4557;
+}
+
+
+
+/*--------------------------------
       Nav
 --------------------------------*/
 
 .abbe-navbar {
-    filter: drop-shadow(1px 1px 5px #333);  
+    background-color: #D5DCEC;
+    filter: drop-shadow(0 5px 20px rgba(35, 52, 92, 0.4));  
 }
 
 .abbe-site-title {
@@ -25,7 +125,7 @@ Author URI: https://albinlagerquist.com
     line-height: 0.5em;
     font-weight: 700;
     text-decoration: none;
-    color: black;
+    color: #3d4557;
 }
 
 .nav-item a {
@@ -34,17 +134,44 @@ Author URI: https://albinlagerquist.com
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
-    color: black;
+    color: #3d4557;
     border-radius: 5px;
 }
 
 .nav-item a:hover {
-    background-color: #0d6efd;
+    background: linear-gradient(135deg, rgba(13,110,253,1) 25%, rgba(0,212,255,1) 100%);
     color: whitesmoke;
 }
 
 .current-menu-item a {
-    background-color: #0d6efd;
-    filter: drop-shadow(1px 1px 3px #333); 
-     color: whitesmoke;
+    background: linear-gradient(135deg, rgba(13,110,253,1) 50%, rgba(0,212,255,1) 100%);
+    filter: drop-shadow(1px 1px 6px rgba(11, 52, 114, 0.7)); 
+    color: whitesmoke;
+}
+
+
+
+/*--------------------------------
+      Projects
+--------------------------------*/
+
+.abbe-card-hover {
+    transition: all 0.3s ease-in;
+}
+
+.abbe-card-hover:hover {
+    filter: drop-shadow(0px 10px 10px rgba(11, 52, 114, 0.3));
+    transition: all 0.3s ease-out;
+}
+
+
+
+/*--------------------------------
+      Forms
+--------------------------------*/
+
+.abbe-form input, textarea {
+    background-color: #D5DCEC;
+    border: none;
+    border-bottom: 3px solid rgba(35, 52, 92, 0.4);
 }
