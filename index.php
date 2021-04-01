@@ -3,7 +3,7 @@
 <main class="container px-5 py-5">
 
     <h1>index.php</h1>
-    <p>Fallback page. Nothing here yoo.</p>
+    <p>Fallback page. Nothing here yooo.</p>
 
 
 </main>
