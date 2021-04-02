@@ -11,7 +11,7 @@
 
 <body>
 
-  <div class="wrapper">
+
 
   <header class="abbe-navbar">
     <div class="container">
@@ -43,6 +43,4 @@
       </nav>
     </div>
   </header>
-
-  <div class="main-wrapper">
    
