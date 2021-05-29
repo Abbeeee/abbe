@@ -10,7 +10,7 @@
 
 
 
-<div class="container p-5 my-5">
+<div class="container p-5 mb-5">
     <h1 class="mb-5">Recent Projects</h1>
     <div class="row">
 

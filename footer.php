@@ -1,6 +1,8 @@
-<footer class="footerclass px-5 py-3" style="background-color: #d5dcec;); ">
-    <div class="container">
-        <h2>Footer</h2>
+<footer class="footerclass px-5 py-5">
+    <div class="container d-flex justify-content-center">
+        <span class="dashicons dashicons-facebook h2"></span>
+        <span class="dashicons dashicons-wordpress h2 mx-5"></span>
+        <span class="dashicons dashicons-instagram h2"></span>
     </div>
 </footer>
 

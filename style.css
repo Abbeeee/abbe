@@ -130,7 +130,7 @@ button:hover, .abbe-button:hover {
 
 .abbe-navbar {
     background-color: #D5DCEC;
-    filter: drop-shadow(0 5px 20px rgba(35, 52, 92, 0.4));  
+    filter: drop-shadow(0 5px 20px rgba(57, 79, 131, 0.5));
 }
 
 .abbe-site-title {
@@ -186,7 +186,7 @@ button:hover, .abbe-button:hover {
 .abbe-form input, textarea {
     background-color: #e8edf8;
     border: none;
-    border-radius: 5px;
+    
     border-bottom: 3px solid#c3cce0;
 }
 
@@ -198,10 +198,9 @@ button:hover, .abbe-button:hover {
 
 .footerclass {
     position: absolute;
-  background-color: #eeeeee;
+  background-color: #d5dcec83;
     left: 0;
   bottom: 0;
-  height: 100px;
   width: 100%;
   overflow: hidden;
 }

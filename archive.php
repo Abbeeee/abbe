@@ -2,6 +2,7 @@
 
 <div class="container p-5 my-5">
     <h2 class="mb-3">The Archive</h2>
+    <?php get_search_form(); ?>
     <p>
         <?php 
         the_tags('<span class="tag"><i class="fa fa-tag me-1"></i>', '</span><span class="tag"><i class="fa fa-tag me-1"></i>', '</span>'); 

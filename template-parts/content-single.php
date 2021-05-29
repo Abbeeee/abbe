@@ -1,4 +1,3 @@
-<!-- Header to display meta data about post -->
 <header class="content-header">
     <div class="meta mb-3">
         <h1 class="header"><strong><?php the_title(); ?></strong></h1>

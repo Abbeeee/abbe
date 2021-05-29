@@ -17,6 +17,7 @@ function abbe_theme_support() {
 add_action('after_setup_theme', 'abbe_theme_support');
 
 
+
 // Set up wp menus
 function abbe_menus() {
     $locations = array(
@@ -29,8 +30,9 @@ function abbe_menus() {
 add_action('init', 'abbe_menus');
 
 
+
 // Create custom post type as well as two taxonomies
-function project_post_type(){
+function project_post_type() {
     // hierachical default = false
     $args = array(
         'label' => 'Projects',
@@ -77,6 +79,7 @@ function abbe_register_styles() {
 add_action('wp_enqueue_scripts', 'abbe_register_styles');
 
 
+
 // function to run script files
 function abbe_register_scripts() {
 
@@ -87,14 +90,6 @@ function abbe_register_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'abbe_register_scripts');
-
-
-
-
-
-
-
-
 
 
 
@@ -121,5 +116,8 @@ function abbe_widget_area() {
 }
 
 add_action('widgets_init', 'abbe_widget_area');
+
+
+
 
 ?>
